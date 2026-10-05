@@ -5,6 +5,16 @@ with a custom MCP tool server, and a React frontend with a custom UI
 (product cards, trend chips, a self-check status indicator) instead of a
 generic Streamlit form.
 
+**Live demo:** [stylescout-tau.vercel.app](https://stylescout-tau.vercel.app)
+**Backend:** [stylescout-wkas.onrender.com](https://stylescout-wkas.onrender.com) ([health check](https://stylescout-wkas.onrender.com/api/health))
+**Source:** [github.com/cinnabonacai/stylescout](https://github.com/cinnabonacai/stylescout)
+
+> Note: the backend is on Render's free tier, which spins down after 15
+> minutes idle. The first request after a period of inactivity can take
+> 30-60 seconds while it wakes back up — that's expected, not a bug.
+
+![StyleScout screenshot](screenshot.png)
+
 ## Context
 
 Built as a second agentic-RAG portfolio project, reusing the architecture
@@ -144,22 +154,23 @@ it imports the `agent`/`tools` packages the same way `main.py` does.)
 
 ## Deploying
 
-**Backend** — [Render](https://render.com) or
-[Railway](https://railway.app) both have free tiers for a small FastAPI
-service:
+The live demo above is deployed exactly like this:
+
+**Backend** — [Render](https://render.com), free tier:
 1. Push this repo to GitHub.
-2. Create a new web service pointing at the `backend/` directory.
+2. New Web Service, pointing at the `backend/` directory.
 3. Build command: `pip install -r requirements.txt`. Start command:
    `uvicorn main:app --host 0.0.0.0 --port $PORT`.
-4. Add `GROQ_API_KEY` as an environment variable/secret.
+4. Add `GROQ_API_KEY` as an environment variable.
 
-**Frontend** — [Vercel](https://vercel.com) or
-[Netlify](https://netlify.com), pointing at the `frontend/` directory:
-1. Build command: `npm run build`. Output directory: `dist`.
-2. Set `VITE_API_URL` to your deployed backend's URL.
-3. Update the backend's CORS `allow_origins` in `backend/main.py` to your
-   deployed frontend URL once you have it (the wildcard `*` is fine for
-   development, not for production).
+**Frontend** — [Vercel](https://vercel.com), free tier, pointing at the
+`frontend/` directory:
+1. Build command: `npm run build`. Output directory: `dist` (Vercel's Vite
+   preset fills both in automatically).
+2. Set `VITE_API_URL` to the deployed backend's URL.
+
+CORS on the backend (`backend/main.py`) already allows all origins, so no
+further config is needed to connect the two once both are deployed.
 
 ## Project structure
 
