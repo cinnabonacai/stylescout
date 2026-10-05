@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+langgraph
+fastmcp
+openai
+anthropic
+scikit-learn
+pandas

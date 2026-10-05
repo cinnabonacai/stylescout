@@ -1,0 +1,31 @@
+item_id,name,category,color,style_tags,season,price,brand
+1,Oversized Wool Blazer,outerwear,charcoal,"tailored,oversized,minimalist",fall,189.00,Everlane
+2,Cropped Leather Jacket,outerwear,black,"edgy,biker,statement",fall,245.00,AllSaints
+3,Longline Puffer Coat,outerwear,olive,"utilitarian,streetwear,oversized",winter,210.00,Uniqlo
+4,Houndstooth Trench Coat,outerwear,cream,"preppy,tailored,classic",fall,220.00,COS
+5,Quilted Vest,outerwear,navy,"casual,layering,utilitarian",fall,85.00,Patagonia
+6,Ribbed Turtleneck Sweater,top,cream,"minimalist,layering,classic",fall,58.00,Everlane
+7,Oversized Graphic Hoodie,top,grey,"streetwear,casual,relaxed",fall,68.00,Stussy
+8,Silk Button-Down Shirt,top,emerald,"elevated,office,statement",fall,95.00,Reformation
+9,Cable-Knit Cardigan,top,camel,"preppy,cozy,classic",fall,78.00,J.Crew
+10,Mesh Long-Sleeve Top,top,black,"edgy,going-out,statement",fall,42.00,Zara
+11,Wide-Leg Trousers,bottom,taupe,"tailored,minimalist,office",fall,110.00,COS
+12,Straight-Leg Dark Denim,bottom,indigo,"classic,casual,versatile",fall,98.00,Levi's
+13,Leather Mini Skirt,bottom,black,"edgy,going-out,statement",fall,89.00,AllSaints
+14,Pleated Midi Skirt,bottom,burgundy,"preppy,elevated,classic",fall,74.00,Reformation
+15,Cargo Pants,bottom,olive,"utilitarian,streetwear,relaxed",fall,92.00,Carhartt WIP
+16,Chelsea Boots,footwear,black,"classic,versatile,tailored",fall,165.00,Dr. Martens
+17,Chunky Platform Loafers,footwear,brown,"preppy,statement,chunky",fall,140.00,Steve Madden
+18,White Leather Sneakers,footwear,white,"minimalist,casual,versatile",fall,110.00,Common Projects
+19,Knee-High Suede Boots,footwear,chocolate,"elevated,statement,classic",fall,195.00,Stuart Weitzman
+20,Combat Boots,footwear,black,"edgy,streetwear,utilitarian",fall,150.00,Dr. Martens
+21,Structured Top-Handle Bag,bag,camel,"preppy,elevated,classic",all,210.00,Mansur Gavriel
+22,Mini Crossbody Bag,bag,black,"minimalist,going-out,versatile",all,120.00,Coach
+23,Oversized Tote,bag,olive,"utilitarian,casual,relaxed",all,95.00,Baggu
+24,Quilted Shoulder Bag,bag,burgundy,"elevated,statement,classic",all,230.00,Kate Spade
+25,Gold Chain Layer Necklace,accessory,gold,"elevated,statement,going-out",all,45.00,Mejuri
+26,Wool Beanie,accessory,charcoal,"streetwear,casual,minimalist",winter,28.00,Carhartt WIP
+27,Leather Belt,accessory,black,"classic,tailored,versatile",all,55.00,Everlane
+28,Oversized Scarf,accessory,camel,"preppy,cozy,classic",fall,48.00,J.Crew
+29,Statement Earrings,accessory,silver,"elevated,going-out,statement",all,38.00,Mejuri
+30,Knit Beret,accessory,burgundy,"preppy,cozy,elevated",fall,32.00,& Other Stories

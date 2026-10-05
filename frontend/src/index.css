@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for StyleScout.
+
+  A classic, "old money" palette: deep navy and cream with a brushed
+  gold accent, serif display type for headings. Dark theme is primary
+  (ink navy, warm off-white text, gold CTA), with a light-mode override
+  via prefers-color-scheme (cream background, navy text and accents)
+  for anyone whose system is set to light.
+*/
+
+:root {
+  --font-display: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-bg: #f6f3ec;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eee8db;
+  --color-border: #ddd3bc;
+  --color-text: #1b2436;
+  --color-text-muted: #5c6578;
+  --color-accent: #9c7a2e;        /* brushed gold - primary CTA */
+  --color-accent-hover: #86682a;
+  --color-brand: #1b2a4a;         /* deep navy - brand/secondary accent */
+  --color-brand-soft: #e7e9f0;
+  --color-good: #2f6b45;
+  --color-bad: #9c3b32;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0d1220;
+    --color-surface: #141b2e;
+    --color-surface-muted: #19223a;
+    --color-border: #2a3550;
+    --color-text: #f1ede1;
+    --color-text-muted: #9aa3bd;
+    --color-accent: #cda855;
+    --color-accent-hover: #ddbd72;
+    --color-brand: #cda855;
+    --color-brand-soft: #241f14;
+    --color-good: #6fbf8a;
+    --color-bad: #e08478;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
